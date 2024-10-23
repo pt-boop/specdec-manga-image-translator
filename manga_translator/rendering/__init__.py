@@ -191,7 +191,7 @@ async def dispatch_eng_render(img_canvas: np.ndarray, original_img: np.ndarray, 
         return img_canvas
 
     if not font_path:
-        font_path = os.path.join(BASE_PATH, 'fonts/comic shanns 2.ttf')
+        font_path = os.path.join(BASE_PATH, 'fonts/anime_ace.ttf')
     text_render.set_font(font_path)
 
     return render_textblock_list_eng(img_canvas, text_regions, line_spacing=line_spacing, size_tol=1.2, original_img=original_img, downscale_constraint=0.8,disable_font_border=disable_font_border)
