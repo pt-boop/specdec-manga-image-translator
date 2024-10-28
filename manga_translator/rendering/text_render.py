@@ -737,10 +737,7 @@ def put_text_horizontal(font_size: int, text: str, width: int, height: int, alig
     line_box = add_color(canvas_text, fg, canvas_border, bg)
 
     # rect
-    if bg is None :
-        x, y, w, h = cv2.boundingRect(canvas_text)
-    else :
-        x, y, w, h = cv2.boundingRect(canvas_border)
+    x, y, width, height = cv2.boundingRect(canvas_border)
     return line_box[y:y+height, x:x+width]
 
 # def put_text(img: np.ndarray, text: str, line_count: int, x: int, y: int, w: int, h: int, fg: Tuple[int, int, int], bg: Optional[Tuple[int, int, int]]):
