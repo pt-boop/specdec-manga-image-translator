@@ -44,9 +44,9 @@ class GroqTranslator(CommonTranslator):
     )
 
     _CHAT_SAMPLE = [
-        ("""Translate into Simplified Chinese. Return the result in JSON format.\n"""
-         '\n{"untranslated": "<|1|>恥ずかしい… 目立ちたくない… 私が消えたい…\\n<|2|>きみ… 大丈夫⁉\\n<|3|>なんだこいつ 空気読めて ないのか…？"}\n'),
-        ('\n{"translated": "<|1|>好尴尬…我不想引人注目…我想消失…\\n<|2|>你…没事吧⁉\\n<|3|>这家伙怎么看不懂气氛的…？"}\n')
+    ("""Translate into English. Return the result in JSON format.\n"""
+     '\n{"untranslated": "<|1|>恥ずかしい… 目立ちたくない… 私が消えたい…\\n<|2|>きみ… 大丈夫⁉\\n<|3|>なんだこいつ 空気読めて ないのか…？"}\n'),
+    ('\n{"translated": "<|1|>So embarrassing... I don’t want to stand out... I wish I could disappear...\\n<|2|>Hey... Are you okay!?\\n<|3|>What’s with this guy? Can’t he read the room...?"}\n')
     ]
 
     def __init__(self, check_groq_key=True):
